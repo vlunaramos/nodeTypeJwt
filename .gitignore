@@ -1,0 +1,9 @@
+# Ignorar archivos de sistema
+.DS_Store
+
+# Ignorar archivos temporales
+*.log
+*.tmp
+
+# Ignorar carpetas de dependencias
+/node_modules
