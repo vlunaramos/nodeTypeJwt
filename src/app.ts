@@ -1,6 +1,8 @@
 import express from 'express'
 import morgan from 'morgan'
 
+import authRoutes from './routes/auth.routes'
+
 // inicializacion
 const app = express();
 
@@ -15,5 +17,7 @@ app.use(express.json());
 app.get('/', (req, res) => {
     res.send(`http://localhost:${app.get('port')}`)
 })
+
+app.use(authRoutes);
 
 export default app;
